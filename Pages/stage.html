@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio - Mes Stages</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<header>
+		<h1>Portfolio BTS SIO SLAM</h1>
+		<nav>
+			<a href="/mon_portfolio/index.html">Accueil</a>
+			<a href="/mon_portfolio/Pages/stage.html" class="active">Mes Stages</a>
+			<a href="/mon_portfolio/Pages/mes_projets.html">Mes Projets</a>
+			<a href="/mon_portfolio/Pages/article.html">Veille Tech</a>
+
+		</nav>
+	</header>
+
+	<main>
+		<section style="border-top: 3px solid var(--ink); padding-top: 1.5rem;">
+			<h2 style="font-family:'Playfair Display',serif; font-size:2rem; font-weight:700; margin-bottom:1.5rem;">Mes Stages</h2>
+			<div class="stages-grid">
+
+		<section class="stage-card">
+			<div class="stage-header">
+				<h3>PC-HS</h3>
+				<span class="stage-date">27 Mai – 28 Juin 2024</span>
+			</div>
+			<p class="stage-mission">Création d'un site web via WordPress.</p>
+		</section>
+
+		<section class="stage-card">
+			<img src="../images/proximit.png" alt="Proximit" class="stage-image">
+			<div class="stage-header">
+				<h3>Proximit</h3>
+				<span class="stage-date">20 Janvier – 28 Février 2025</span>
+			</div>
+			<p class="stage-mission">Découverte des bases du framework Symfony.</p>
+			<a href="#" class="project-link" onclick="openProximitModal(); return false;">Voir plus</a>
+		</section>
+
+		<section class="stage-card">
+			<img src="../images/webuz.png" alt="Webuzz" class="stage-image">
+			<div class="stage-header">
+				<h3>Webuzz</h3>
+				<span class="stage-date">05 Janvier – 13 Février 2026</span>
+			</div>
+			<p class="stage-mission">Création d'un site web via WordPress.</p>
+			<a href="#" class="project-link" onclick="openWebuzzModal(); return false;">Voir plus</a>
+		</section>
+			</div>
+		</section>
+	</main>
+
+	<div class="modal-overlay" id="stageModal">
+		<div class="modal-box">
+			<button class="modal-close" onclick="closeStageModal()">&times;</button>
+			<h2 id="modalTitle"></h2>
+			<div id="modalContent"></div>
+		</div>
+	</div>
+
+	<script src="/mon_portfolio/js/proximit.js"></script>
+	<script src="/mon_portfolio/js/webuzz.js"></script>
+
+</body>
+</html>
